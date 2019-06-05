@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".SiteActivity"
+  >
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+      android:id="@+id/picTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+        android:id="@+id/theSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="site"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        />
+
+      <ImageView
+        android:id="@+id/topPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/technion"
+        />
+
+
+    </FrameLayout>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/themeColor">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:id="@+id/timerLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="10dp"
+          android:orientation="horizontal">
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/textViewTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="00:05:00"
+              android:textSize="30sp" />
+
+            <FrameLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:layout_gravity="center"
+              >
+            <Button
+              android:id="@+id/buttonStart"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="התחל טיימר"
+              android:textStyle="bold"
+              android:background="@drawable/button_background"
+              />
+              <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="דלג"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:background="@drawable/button_background"
+
+                />
+            </FrameLayout>
+          </LinearLayout>
+          <TextView
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/timer_header"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            />
+
+        </LinearLayout>
+
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_gravity="center"
+  android:layout_marginTop="15dp"
+  >
+
+        <Button
+          android:id="@+id/bottomButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="צלם סלפי"
+          android:layout_margin="10dp"
+          android:visibility="invisible"
+          android:textStyle="bold"
+          android:background="@drawable/button_background"
+          />
+  <TextView
+    android:id="@+id/bottomText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="@string/timer_done"
+    android:layout_marginRight="10dp"
+    android:textSize="16sp"
+    android:visibility="invisible"/>
+
+</LinearLayout>
+
+        <TextView
+          android:id="@+id/wordsTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:textSize="20sp"
+          android:layout_gravity="center"
+          android:text="כמה מילים מהחברים:"
+          android:visibility="gone"
+          />
+
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/videoRecyclerView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginRight="10dp"
+          android:gravity="start"
+          android:visibility="gone"
+          />
+
+
+
+      </LinearLayout>
+    </ScrollView>
+  </LinearLayout>
+
+  <ScrollView
+    android:id="@+id/selfieFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:visibility="gone"
+
+
+    >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:orientation="vertical">
+
+
+      <ImageView
+        android:id="@+id/selfiePic"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+      <Button
+        android:id="@+id/keepOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:text="נהדר! מוכן לחידה הבאה?"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        />
+
+    </LinearLayout>
+  </ScrollView>
+</FrameLayout>

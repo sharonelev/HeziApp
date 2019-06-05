@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000000"
+  tools:context=".MainActivity">
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeColor"
+    >
+    <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/themeColor"
+      android:orientation="vertical"
+      >
+
+      <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="@string/hint_title"
+        android:textSize="30sp"
+
+        />
+
+      <include
+        android:id="@+id/hint_1"
+        layout="@layout/hint_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+      </include>
+
+      <include
+        android:id="@+id/hint_2"
+        layout="@layout/hint_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+      </include>
+
+      <include
+        android:id="@+id/hint_3"
+        layout="@layout/hint_3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+      </include>
+
+      <include
+        android:id="@+id/hint_4"
+        layout="@layout/hint_4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+      </include>
+    </LinearLayout>
+  </ScrollView>
+
+
+  <include layout="@layout/progress_dialog"></include>
+
+
+</FrameLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/themeColor"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <LinearLayout
+      android:id="@+id/belowTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+    >
+
+      <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/hint_1"
+        />
+
+      <ImageView
+        android:id="@+id/quiz_1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/quiz_1"
+        android:padding="0dp"/>
+
+
+      <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="מי הם שלושת הדמויות?"
+        android:textSize="18dp"
+        />
+
+      <LinearLayout
+      android:id="@+id/threeCharacters"
+      android:layout_marginTop="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Button
+            android:id="@+id/checkAnsPerson1"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="בדוק"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            />
+          <ImageView
+            android:id="@+id/valid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/wrong"/>
+
+        <EditText
+          android:id="@+id/person1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:maxLines="1"
+          android:textSize="14dp"
+          android:hint="הזן כאן דמות מספר 1"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Button
+            android:id="@+id/checkAnsPerson2"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="בדוק"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            />
+          <ImageView
+            android:id="@+id/valid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/wrong"/>
+          <EditText
+            android:id="@+id/person2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:hint="הזן כאן דמות מספר 2"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginBottom="10dp">
+          <Button
+            android:id="@+id/checkAnsPerson3"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="בדוק"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            />
+
+          <ImageView
+            android:id="@+id/valid3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/wrong"/>
+
+
+          <EditText
+            android:id="@+id/person3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:hint="הזן כאן דמות מספר 3"/>
+
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+

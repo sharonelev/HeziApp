@@ -1,0 +1,30 @@
+<resources>
+  <string name="app_name">Hezi Bday</string>
+  <string name="hint_1">לפניך מפוזרים מאפיינים של שלוש דמויות מוכרות. באמצעותם, עליך לזהות את שלוש הדמויות ולהמתין למשימה הבאה</string>
+  <string name="hint_2">ענה על השאלות הבאות:</string>
+  <string name="hint_3">קח דף ועט ומצא את הנעלמים החמודים:</string>
+  <string name="hint_4">חידת כפל לשון:</string>
+  <string name="timer_header">יש לך 5 דקות\nלספר לנו\nאודותיך במקום זה</string>
+  <string name="timer_done">נגמר הזמן, תודה על השיתוף! צפה בסרטונים שהכינו חבריך ולאחר מכן צלם סלפי והמשך לחידה הבאה</string>
+  <string name="hint_title">חידה מספר %s</string>
+  <string name="at_site">הגעת ליעד</string>
+  <string name="bday60">יומולדת 60 לחזי</string>
+  <string name="no_location">סתם, לא להגזים, האפליקציה לא עד כדי כך משוכללת. סומכים עליך.</string>
+  <string name="hint_args">hint_num</string>
+  <string name="wrong">אחת או יותר מהתשובות אינן נכונות</string>
+  <string name="correct">סחטיין!\nמוכר לך המספר שיצא?\nחייג וגלה את היעד הבא</string>
+  <string name="missing">לא הזנת את כל התשובות כראוי</string>
+  <string name="question1">מספר הפעמים שאבא תיקן משהו מאז שהכיר את מיכאל</string>
+  <string name="question2">מספר הילדים  שלך</string>
+  <string name="question3">מספר החברות שהיו לך לפני אמא</string>
+  <string name="question4">מספר המציין את הטבע ביהדות</string>
+  <string name="question5">מספר הבית בו גרנו בפתח תקווה</string>
+  <string name="question6">מספר השנים שלמדת לתואר</string>
+  <string name="question7">מספר השנים בהן נולדו כל ילדיך</string>
+  <string name="question8">מספר הדקות שאמא מקדישה לך לדבר תורה בשבת</string>
+  <string name="question9">מספר השעות שאתה מבלה כל יום על הכביש</string>
+  <string name="question10">מספר שעות הטיסה להודו</string>
+  <string name="screen">screen</string>
+  <string name="hint_num">hint_num</string>
+  <string name="the_end">עמדת באתגר הסלפיז בהצלחה! עכשיו לך לנוח במלון ובבריכה</string>
+</resources>
